@@ -44,11 +44,15 @@ body {
 }
 @font-face {
   font-family: engFont;
-  src: url(DaytonaPro-Regular.ttf);
+  src: url(fonts/DaytonaPro-Regular.ttf);
+}
+@font-face {
+  font-family: korFont;
+  src: url(fonts/MICEGothic.ttf);
 }
 header {
   font-family: engFont;
-  font-size: 30px;
+  font-size: 2.34375vw;
   color: whitesmoke;
   background: linear-gradient(
     to bottom,
@@ -66,10 +70,28 @@ header {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 header span {
   background: linear-gradient(to right, #8360c3, #2ebf91);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+header .skku-logo {
+  width: 5.46875vw;
+  height: 5.46875vw;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+header .comit-logo {
+  font-size: 2vw;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: engFont;
+  color: rgb(97, 112, 147);
 }
