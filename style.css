@@ -95,3 +95,16 @@ header .comit-logo {
   font-family: engFont;
   color: rgb(97, 112, 147);
 }
+
+body {
+  background-image: url('night.jpg');
+}
+.maintitle {
+  color: azure;
+}
+.skkuintro {
+  color: azure;
+}
+.clubs {
+  color: azure;
+}
