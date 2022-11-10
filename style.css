@@ -1,12 +1,110 @@
-body{
-  background-image: url("night.jpg")
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.maintitle{
-color:azure
+body {
+  min-height: 100vh;
+  background: #0c192c;
 }
-.skkuintro{
-  color:azure
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-.clubs{
-  color:azure
+.stars {
+  z-index: -100; /*백그라운드로 배치*/
+  position: relative;
+  display: flex;
+}
+.stars span {
+  position: relative;
+  min-width: 20px;
+  min-height: 20px;
+  background: #4fc3dc;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #4fc3dc44, 0 0 30px #4fc3dc, 0 0 70px #4fc3dc;
+  animation: animate 30s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+.stars span:nth-child(even) {
+  background: #07ffbdcd;
+  box-shadow: 0 0 0 6px #07ffbd45, 0 0 30px #07ffbd, 0 0 70px #07ffbd;
+}
+@keyframes animate {
+  /*star-flying 애니메이션*/
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-30vh) scale(1);
+  }
+}
+@font-face {
+  font-family: engFont;
+  src: url(fonts/DaytonaPro-Regular.ttf);
+}
+@font-face {
+  font-family: korFont;
+  src: url(fonts/MICEGothic.ttf);
+}
+header {
+  font-family: engFont;
+  font-size: 2.34375vw;
+  color: whitesmoke;
+  background: linear-gradient(
+    to bottom,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #1c3a67,
+    #3b76ce,
+    #1c3a67,
+    #0c192c
+  );
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header span {
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .skku-logo {
+  width: 5.46875vw;
+  height: 5.46875vw;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+header .comit-logo {
+  font-size: 2vw;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: engFont;
+  color: rgb(97, 112, 147);
+}
+
+body {
+  background-image: url('night.jpg');
+}
+.maintitle {
+  color: azure;
+}
+.skkuintro {
+  color: azure;
+}
+.clubs {
+  color: azure;
 }
