@@ -5,16 +5,23 @@
 }
 body {
   min-height: 100vh;
-  background: #0c192c;
 }
 .background-container {
+  z-index: -100; /*백그라운드로 배치*/
+  background: linear-gradient(
+    to bottom,
+    #3b76ce,
+    #1c3a67,
+    #0c192c,
+    #0c192c,
+    #0c192c
+  );
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   overflow: hidden;
 }
 .stars {
-  z-index: -100; /*백그라운드로 배치*/
   position: relative;
   display: flex;
 }
@@ -36,7 +43,7 @@ body {
 @keyframes animate {
   /*star-flying 애니메이션*/
   0% {
-    transform: translateY(100vh) scale(0);
+    transform: translateY(150vh) scale(0);
   }
   100% {
     transform: translateY(-30vh) scale(1);
@@ -52,19 +59,15 @@ body {
 }
 header {
   font-family: engFont;
-  font-size: 2.34375vw;
+  font-size: 3.3vw;
   color: whitesmoke;
   background: linear-gradient(
     to bottom,
-    #0c192c,
-    #0c192c,
-    #0c192c,
-    #0c192c,
+    #050a11,
+    #0b1729,
     #0c192c,
     #1c3a67,
-    #3b76ce,
-    #1c3a67,
-    #0c192c
+    #3b76ce
   );
   display: flex;
   height: 100vh;
@@ -74,7 +77,7 @@ header {
 }
 
 header span {
-  background: linear-gradient(to right, #8360c3, #2ebf91);
+  background: linear-gradient(to right, #8664c6, #2ebf91);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,4 +97,47 @@ header .comit-logo {
   left: 20px;
   font-family: engFont;
   color: rgb(97, 112, 147);
+}
+
+.about-us {
+  font-family: engFont;
+  font-size: 3.3vw;
+  color: whitesmoke;
+  background: #3b76ce;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.classes {
+  font-family: engFont;
+  font-size: 3.3vw;
+  color: whitesmoke;
+  background: #081f42;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.projects {
+  font-family: engFont;
+  font-size: 3.3vw;
+  background: #ffffff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contacts {
+  font-family: engFont;
+  font-size: 3.3vw;
+  background: #03132b;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
