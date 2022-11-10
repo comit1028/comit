@@ -14,6 +14,7 @@ body {
     #1c3a67,
     #0c192c,
     #0c192c,
+    #0c192c,
     #0c192c
   );
   position: relative;
@@ -86,35 +87,43 @@ header .skku-logo {
   width: 5.46875vw;
   height: 5.46875vw;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 1.171875vw;
+  right: 1.5625vw;
 }
 
 header .comit-logo {
   font-size: 2vw;
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 1.171875vw;
+  left: 1.5625vw;
   font-family: engFont;
   color: rgb(97, 112, 147);
 }
-
 .about-us {
-  font-family: engFont;
-  font-size: 3.3vw;
+  aspect-ratio: 960/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/transition-1.svg);
+  background-color: #3c31dd;
   color: whitesmoke;
-  background: #3b76ce;
+  height: 150vh;
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  font-family: engFont;
+}
+.aboutus-title {
+  font-size: 4.5vw;
+  position: relative;
+  top: 35vw;
+  left: 10vw;
 }
 .classes {
   font-family: engFont;
   font-size: 3.3vw;
   color: whitesmoke;
-  background: #081f42;
+  background: #3b76ce;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -140,17 +149,4 @@ header .comit-logo {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-body {
-  background-image: url("night.jpg");
-}
-.maintitle {
-  color: azure;
-}
-.skkuintro {
-  color: azure;
-}
-.clubs {
-  color: azure;
 }
