@@ -14,27 +14,27 @@ body {
   overflow: hidden;
 }
 .stars {
-  z-index: -100;
+  z-index: -100; /*백그라운드로 배치*/
   position: relative;
   display: flex;
 }
 .stars span {
   position: relative;
-  min-width: 1px;
-  min-height: 5px;
-  background: #dcff8b;
+  min-width: 20px;
+  min-height: 20px;
+  background: #4fc3dc;
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.5px #0def95b3, 0 0 0.7px #0debef, 0 0 0.8px #0debef;
+  box-shadow: 0 0 0 6px #4fc3dc44, 0 0 30px #4fc3dc, 0 0 70px #4fc3dc;
   animation: animate 30s linear infinite;
-  animation-duration: calc(80s / var(--i));
+  animation-duration: calc(120s / var(--i));
 }
 .stars span:nth-child(even) {
-  background: rgba(255, 249, 253, 0.989);
-  box-shadow: 0 0 0 0.5px rgba(201, 214, 255, 0.989),
-    0 0 0.7px rgba(121, 231, 250, 0.989), 0 0 1px rgba(28, 147, 252, 0.989);
+  background: #07ffbdcd;
+  box-shadow: 0 0 0 6px #07ffbd45, 0 0 30px #07ffbd, 0 0 70px #07ffbd;
 }
 @keyframes animate {
+  /*star-flying 애니메이션*/
   0% {
     transform: translateY(100vh) scale(0);
   }
@@ -42,6 +42,34 @@ body {
     transform: translateY(-30vh) scale(1);
   }
 }
-header .sub-title {
+@font-face {
+  font-family: engFont;
+  src: url(DaytonaPro-Regular.ttf);
+}
+header {
+  font-family: engFont;
   font-size: 30px;
+  color: whitesmoke;
+  background: linear-gradient(
+    to bottom,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #0c192c,
+    #1c3a67,
+    #3b76ce,
+    #1c3a67,
+    #0c192c
+  );
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header span {
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
