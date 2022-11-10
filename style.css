@@ -58,6 +58,10 @@ body {
   font-family: korFont;
   src: url(fonts/MICEGothic.ttf);
 }
+@font-face {
+  font-family: engFont2;
+  src: url(fonts/Hack-Regular.ttf);
+}
 header {
   font-family: engFont;
   font-size: 3.3vw;
@@ -99,7 +103,8 @@ header .comit-logo {
   font-family: engFont;
   color: rgb(97, 112, 147);
 }
-.about-us {
+.about {
+  /*about 페이지 */
   aspect-ratio: 960/600;
   width: 100%;
   background-repeat: no-repeat;
@@ -107,15 +112,15 @@ header .comit-logo {
   background-size: cover;
   background-image: url(images/transition-1.svg);
   background-color: #3c31dd;
-  color: whitesmoke;
-  height: 150vh;
+  color: white;
+  height: 200vh;
   display: flex;
   position: relative;
-  font-family: engFont;
+  font-family: engFont2;
 }
-.aboutus-title {
-  font-size: 4.5vw;
-  position: relative;
+.about-title-open {
+  font-size: 2vw;
+  position: absolute;
   top: 35vw;
   left: 10vw;
 }
@@ -123,7 +128,7 @@ header .comit-logo {
   font-family: engFont;
   font-size: 3.3vw;
   color: whitesmoke;
-  background: #3b76ce;
+  background: #1f5cb7;
   display: flex;
   height: 100vh;
   justify-content: center;
