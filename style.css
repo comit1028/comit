@@ -34,14 +34,14 @@ body {
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0 0 0 6px #4fc3dc44, 0 0 30px #4fc3dc, 0 0 70px #4fc3dc;
-  animation: animate 30s linear infinite;
+  animation: stars 30s linear infinite;
   animation-duration: calc(120s / var(--i));
 }
 .stars span:nth-child(even) {
   background: #07ffbdcd;
   box-shadow: 0 0 0 6px #07ffbd45, 0 0 30px #07ffbd, 0 0 70px #07ffbd;
 }
-@keyframes animate {
+@keyframes stars {
   /*star-flying 애니메이션*/
   0% {
     transform: translateY(150vh) scale(0);
@@ -160,6 +160,71 @@ header .comit-logo {
   right: 18vw;
   position: absolute;
 }
+.transition1 {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background: #0c192c;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rocket {
+  width: 15vh;
+  height: 25vh;
+  position: relative;
+  animation: fly 0.2s ease infinite;
+} /*
+.transition1 .rocket {
+  position: relative;
+  animation: animate 0.2s ease infinite;
+}*/
+@keyframes fly {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translate(2px);
+  }
+}
+.transition1 .rocket::before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#00d0ff, transparent);
+}
+.transition1 .rocket::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#00d0ff, transparent);
+  filter: blur(20px);
+}
+.transition1 i {
+  position: absolute;
+  top: -250px;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animateStars linear infinite;
+}
+@keyframes animateStars {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200vh);
+  }
+}
+
 .classes {
   /*분반 페이지*/
   font-family: engFont;
