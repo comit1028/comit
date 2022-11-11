@@ -15,5 +15,7 @@ function stars() {
     star.style.animationDuration = duration + "s";
 
     scene.appendChild(star);
+    i++;
   }
 }
+stars();
