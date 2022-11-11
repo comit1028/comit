@@ -122,7 +122,7 @@ header .comit-logo {
   position: relative;
   font-family: engFontBold;
 }
-.about .name {
+.name {
   font-size: 10vw;
   position: absolute;
   bottom: 24vw;
@@ -137,6 +137,7 @@ header .comit-logo {
   line-height: 1.5;
 }
 .striped-circle {
+  /*about: 점선 원 도형*/
   width: 27vw;
   height: 27vw;
   top: 42.5vw;
@@ -144,6 +145,7 @@ header .comit-logo {
   position: absolute;
 }
 .buildings {
+  /*about: 건물 도형*/
   width: 33vw;
   height: 16vw;
   bottom: 0;
@@ -151,6 +153,7 @@ header .comit-logo {
   position: absolute;
 }
 .grids {
+  /*about: 그리드 도형*/
   width: 34vw;
   height: 30vw;
   bottom: 3vw;
@@ -158,6 +161,7 @@ header .comit-logo {
   position: absolute;
 }
 .classes {
+  /*분반 페이지*/
   font-family: engFont;
   font-size: 3.3vw;
   color: whitesmoke;
