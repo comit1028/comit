@@ -137,6 +137,49 @@ header .comit-logo {
   font-size: 2.8vw;
   line-height: 1.5;
 }
+.wrapper {
+  position: absolute;
+  top: 83vh;
+  left: 5.5vw;
+  display: inline-flex;
+}
+.dynamic-txts {
+  overflow: hidden;
+  line-height: 4.5vw;
+  height: 4.5vw;
+}
+.dynamic-txts li {
+  font-family: korFont;
+  font-size: 3.7vw;
+  top: 0;
+  list-style: none;
+  position: relative;
+  animation: slide 10s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -18vw;
+  }
+}
+.dynamic-txts li .txt-lists {
+  position: relative;
+}
+.dynamic-txts li .txt-lists::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #3c31dd;
+  border-left: 0.3129890453834116vw solid #ffffff;
+  animation: typing 2.5s steps(17) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -1.75vw 0 1.75vw;
+  }
+}
 .striped-circle {
   /*about: 점선 원 도형*/
   width: 65vw;
@@ -233,7 +276,7 @@ header .comit-logo {
   left: 50%;
   transform: translateX(-50%);
   width: 2vw;
-  height: 13vw;
+  height: 28.347529812606474vh;
   background: linear-gradient(transparent, #00d0ff0f, #00d0ff36, #00d0ffcb);
 }
 .transition1 .rocket::after {
@@ -250,7 +293,7 @@ header .comit-logo {
 
 .transition1 i {
   position: absolute;
-  top: -42.58943781942078vh;
+  top: -48vh;
   background: rgba(255, 255, 255, 0.5);
   animation: animateStars linear infinite;
 }
