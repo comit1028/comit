@@ -132,9 +132,9 @@ header .comit-logo {
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 94.18867924528301vh;
+  top: 96vh;
   left: 5.5vw;
-  font-size: 2.8vw;
+  font-size: 3vw;
   line-height: 1.5;
 }
 .wrapper {
