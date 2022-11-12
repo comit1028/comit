@@ -34,14 +34,14 @@ body {
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0 0 0 6px #4fc3dc44, 0 0 30px #4fc3dc, 0 0 70px #4fc3dc;
-  animation: animate 30s linear infinite;
+  animation: stars 30s linear infinite;
   animation-duration: calc(120s / var(--i));
 }
 .stars span:nth-child(even) {
   background: #07ffbdcd;
   box-shadow: 0 0 0 6px #07ffbd45, 0 0 30px #07ffbd, 0 0 70px #07ffbd;
 }
-@keyframes animate {
+@keyframes stars {
   /*star-flying 애니메이션*/
   0% {
     transform: translateY(150vh) scale(0);
@@ -53,6 +53,10 @@ body {
 @font-face {
   font-family: engFont;
   src: url(fonts/DaytonaPro-Regular.ttf);
+}
+@font-face {
+  font-family: engFontBold;
+  src: url(fonts/DaytonaPro-Bold.ttf);
 }
 @font-face {
   font-family: korFont;
@@ -116,15 +120,144 @@ header .comit-logo {
   height: 200vh;
   display: flex;
   position: relative;
-  font-family: engFont2;
+  font-family: engFontBold;
 }
-.about-title-open {
-  font-size: 2vw;
+.name {
+  font-size: 10vw;
   position: absolute;
-  top: 35vw;
+  bottom: 24vw;
   left: 10vw;
 }
+.sub-title {
+  font-family: korFont;
+  position: absolute;
+  top: 43vw;
+  left: 10vw;
+  font-size: 3.3vw;
+  line-height: 1.5;
+}
+.striped-circle {
+  /*about: 점선 원 도형*/
+  width: 27vw;
+  height: 27vw;
+  top: 42.5vw;
+  right: 6vw;
+  position: absolute;
+}
+.buildings {
+  /*about: 건물 도형*/
+  width: 33vw;
+  height: 16vw;
+  bottom: 0;
+  left: 10vw;
+  position: absolute;
+}
+.grids {
+  /*about: 그리드 도형*/
+  width: 34vw;
+  height: 30vw;
+  bottom: 3vw;
+  right: 18vw;
+  position: absolute;
+}
+.transition-buffer {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(to bottom, #3c31dd, #0c192c);
+}
+.transition1 {
+  z-index: -100;
+  position: relative;
+  width: 100%;
+  height: 400vh;
+  background: radial-gradient(
+      farthest-corner at 50vw 100vw,
+      rgba(255, 0, 255, 0.5),
+      transparent
+    ),
+    linear-gradient(
+      to bottom right,
+      #050a11,
+      #0b1729,
+      #0c192c,
+      #3b76ce,
+      #0c192c,
+      #0c192c,
+      #0c192c,
+      #0c192c,
+      #0b1729
+    );
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.transition-text {
+  font-family: engFont2;
+  color: white;
+  font-size: 2.5vw;
+  bottom: 60vw;
+  position: absolute;
+}
+.rocket1 {
+  width: 25vh;
+  height: 35vh;
+}
+.transition1 .rocket {
+  position: relative;
+  animation: fly 0.2s ease infinite;
+  top: 90vh;
+}
+@keyframes fly {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translate(2px);
+  }
+}
+.transition1 .rocket::before {
+  content: "";
+  position: absolute;
+  top: -23vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2vw;
+  height: 13vw;
+  background: linear-gradient(transparent, #00d0ff0f, #00d0ff36, #00d0ffcb);
+}
+.transition1 .rocket::after {
+  content: "";
+  position: absolute;
+  top: -23vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.8018018018018018vw;
+  height: 34.07155025553663vh;
+  background: linear-gradient(transparent, #00d0ff);
+  filter: blur(1.5625vw);
+}
+
+.transition1 i {
+  position: absolute;
+  top: -42.58943781942078vh;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animateStars linear infinite;
+}
+@keyframes animateStars {
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(400vh);
+  }
+}
+
 .classes {
+  /*분반 페이지*/
   font-family: engFont;
   font-size: 3.3vw;
   color: whitesmoke;
