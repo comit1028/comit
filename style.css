@@ -323,7 +323,7 @@ header .comit-logo {
 .box {
   position: relative;
   width: 25vw;
-  height: 55vh;
+  height: 45vh;
   background: #052551;
   display: flex;
   justify-content: center;
@@ -341,21 +341,24 @@ header .comit-logo {
 }
 
 .js-logo {
-  height: 20vh;
-  width: 15vw;
+  height: 18vh;
+  width: 13.5vw;
+  margin-bottom: 2vh;
 }
 
 .python-logo {
   height: 20vh;
-  width: 7vw;
+  width: 9vw;
 }
 .c-logo {
   height: 20vh;
-  width: 15vw;
+  width: 13.5vw;
+  margin-bottom: 2vh;
 }
 .ms-logo {
   height: 20vh;
   width: 15vw;
+  margin-bottom: 1vh;
 }
 footer {
   font-family: engFont;
