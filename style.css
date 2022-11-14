@@ -95,17 +95,17 @@ header .skku-logo {
   width: 5.46875vw;
   height: 5.46875vw;
   position: absolute;
-  top: 2.830188679245283vh;
-  right: 1.5625vw;
+  top: 2vh;
+  left: 1.5625vw;
 }
 
 header .comit-logo {
   font-size: 2vw;
   position: absolute;
-  top: 2.830188679245283vh;
-  left: 1.5625vw;
+  top: 5vh;
+  left: 8.2vw;
   font-family: engFont;
-  color: rgb(97, 112, 147);
+  color: rgb(105, 120, 154);
 }
 .about {
   /*about 페이지 */
@@ -347,7 +347,7 @@ header .comit-logo {
 }
 
 .python-logo {
-  height: 20vh;
+  height: 20.3vh;
   width: 9vw;
 }
 .c-logo {
