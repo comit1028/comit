@@ -22,6 +22,26 @@ body {
   height: 150vh;
   overflow: hidden;
 }
+.main-nav-list {
+  list-style: none;
+  display: relative;
+  gap: 2.5vw;
+  top: 5vh;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.2vw;
+  transition: all 0.3s;
+  font-family: engFont;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgba(0, 255, 217, 0.979);
+}
 .stars {
   position: relative;
   display: flex;
