@@ -26,16 +26,16 @@ body {
   list-style: none;
   display: flex;
   gap: 3vw;
-  margin-top: -70vh;
+  margin-top: -62vh;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
   color: #f5f7f9;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2.1vw;
   transition: all 0.3s;
-  font-family: engFont;
+  font-family: engFontBold;
   transition: all 0.3s;
 }
 .main-nav-link:hover,
@@ -91,17 +91,12 @@ header {
   font-size: 3vw;
   color: #03132b;
   display: flex;
-  height: 150vh;
+  height: 130vh;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("images/triangle.jpg");
-  background-size: 180vh;
-}
-.sphere1 {
-  height: 70vh;
-  position: absolute;
-  right: 15vw;
+  background-image: url("images/pyramid2.jpg");
+  background-size: 100% 110%;
 }
 
 header .skku-logo {
@@ -137,17 +132,17 @@ header .comit-logo {
   overflow: hidden;
 }
 .name {
-  font-size: 11vw;
+  font-size: 12vw;
   position: absolute;
-  top: 45vh;
-  color: rgb(242, 234, 234);
-  right: 5vw;
+  top: 43vh;
+  color: rgb(255, 254, 246);
+  right: 9vw;
   font-family: engFontBold;
 }
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 38vh;
+  top: 39vh;
   right: 5.5vw;
   font-size: 2.7vw;
   line-height: 1.5;
@@ -156,7 +151,7 @@ header .comit-logo {
 .wrapper {
   position: absolute;
   top: 23vh;
-  right: 3.7vw;
+  right: 3vw;
   display: inline-flex;
 }
 .dynamic-txts {
@@ -187,7 +182,7 @@ header .comit-logo {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #000000;
+  background: #01bbec;
   border-left: 0.3129890453834116vw solid #ffffff;
   animation: typing 2.5s steps(17) infinite;
 }
