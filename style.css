@@ -24,16 +24,16 @@ body {
 }
 .main-nav-list {
   list-style: none;
-  display: relative;
-  gap: 2.5vw;
-  top: 5vh;
+  display: flex;
+  gap: 3vw;
+  margin-top: -70vh;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #f5f7f9;
   font-weight: 500;
-  font-size: 2.2vw;
+  font-size: 2vw;
   transition: all 0.3s;
   font-family: engFont;
   transition: all 0.3s;
@@ -88,27 +88,20 @@ body {
 }
 header {
   font-family: engFont;
-  font-size: 3.3vw;
-  color: whitesmoke;
-  background: linear-gradient(
-    to bottom,
-    #050a11,
-    #0b1729,
-    #0c192c,
-    #1c3a67,
-    #3b76ce
-  );
+  font-size: 3vw;
+  color: #03132b;
   display: flex;
-  height: 100vh;
+  height: 150vh;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url("images/triangle.jpg");
+  background-size: 180vh;
 }
-
-header span {
-  background: linear-gradient(to right, #8664c6, #2ebf91);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.sphere1 {
+  height: 70vh;
+  position: absolute;
+  right: 15vw;
 }
 
 header .skku-logo {
@@ -144,23 +137,26 @@ header .comit-logo {
   overflow: hidden;
 }
 .name {
-  font-size: 10vw;
+  font-size: 11vw;
   position: absolute;
-  bottom: 55vh;
-  left: 5.5vw;
+  top: 45vh;
+  color: rgb(242, 234, 234);
+  right: 5vw;
+  font-family: engFontBold;
 }
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 96vh;
-  left: 5.5vw;
-  font-size: 3vw;
+  top: 38vh;
+  right: 5.5vw;
+  font-size: 2.7vw;
   line-height: 1.5;
+  color: #ffffff;
 }
 .wrapper {
   position: absolute;
-  top: 83vh;
-  left: 5.5vw;
+  top: 23vh;
+  right: 3.7vw;
   display: inline-flex;
 }
 .dynamic-txts {
@@ -170,7 +166,8 @@ header .comit-logo {
 }
 .dynamic-txts li {
   font-family: korFont;
-  font-size: 3.7vw;
+  color: #ffffff;
+  font-size: 3.4vw;
   top: 0;
   list-style: none;
   position: relative;
@@ -190,7 +187,7 @@ header .comit-logo {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #3c31dd;
+  background: #000000;
   border-left: 0.3129890453834116vw solid #ffffff;
   animation: typing 2.5s steps(17) infinite;
 }
@@ -199,21 +196,6 @@ header .comit-logo {
     left: 100%;
     margin: 0 -1.75vw 0 1.75vw;
   }
-}
-.striped-circle {
-  /*about: 점선 원 도형*/
-  width: 65vw;
-  height: 141vh;
-  bottom: 0vh;
-  right: -20vw;
-  position: absolute;
-}
-.buildings {
-  width: 46vw;
-  height: 35vh;
-  bottom: 0vh;
-  left: 5.5vw;
-  position: absolute;
 }
 .transition1 {
   z-index: -100;
