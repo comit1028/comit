@@ -26,12 +26,12 @@ body {
   list-style: none;
   display: flex;
   gap: 3vw;
-  margin-top: -62vh;
+  margin-top: -52vh;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: #f5f7f9;
+  color: #ffffff;
   font-weight: 500;
   font-size: 2.1vw;
   transition: all 0.3s;
@@ -40,7 +40,7 @@ body {
 }
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: rgba(0, 255, 217, 0.979);
+  color: #ff4a4a;
 }
 .stars {
   position: relative;
@@ -88,70 +88,55 @@ body {
 }
 header {
   font-family: engFont;
-  font-size: 3vw;
-  color: #03132b;
+  color: #ffffff;
   display: flex;
   height: 130vh;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("images/pyramid2.jpg");
-  background-size: 100% 110%;
 }
-
-header .skku-logo {
+.skku-logo {
   width: 5.46875vw;
   height: 5.46875vw;
   position: absolute;
   top: 2vh;
   left: 1.5625vw;
 }
-
+.world {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
 header .comit-logo {
   font-size: 2vw;
   position: absolute;
   top: 5vh;
   left: 8.2vw;
-  font-family: engFont;
-  color: rgb(105, 120, 154);
-}
-.about {
-  /*about 페이지 */
-  aspect-ratio: 960/600;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(images/transition-1.svg);
-  background-color: #3c31dd;
-  color: white;
-  height: 200vh;
-  display: flex;
-  position: relative;
   font-family: engFontBold;
-  overflow: hidden;
+  color: #ff4a4a;
 }
 .name {
-  font-size: 12vw;
+  font-size: 12.5vw;
   position: absolute;
-  top: 43vh;
-  color: rgb(255, 254, 246);
-  right: 9vw;
+  top: 55vh;
+  color: #ff4a4a;
+  left: 7vw;
   font-family: engFontBold;
 }
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 39vh;
-  right: 5.5vw;
-  font-size: 2.7vw;
+  top: 49vh;
+  left: 7vw;
+  font-size: 3.1vw;
   line-height: 1.5;
   color: #ffffff;
 }
 .wrapper {
   position: absolute;
-  top: 23vh;
-  right: 3vw;
+  top: 35vh;
+  left: 7vw;
   display: inline-flex;
 }
 .dynamic-txts {
@@ -162,7 +147,7 @@ header .comit-logo {
 .dynamic-txts li {
   font-family: korFont;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   top: 0;
   list-style: none;
   position: relative;
@@ -182,7 +167,7 @@ header .comit-logo {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #01bbec;
+  background: transparent;
   border-left: 0.3129890453834116vw solid #ffffff;
   animation: typing 2.5s steps(17) infinite;
 }
