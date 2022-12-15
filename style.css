@@ -6,8 +6,9 @@
 body {
   min-height: 100vh;
 }
+/* 
 .background-container {
-  z-index: -100; /*백그라운드로 배치*/
+  z-index: -100; 
   background: linear-gradient(
     to bottom,
     #3b76ce,
@@ -21,6 +22,15 @@ body {
   width: 100%;
   height: 150vh;
   overflow: hidden;
+} 
+*/
+.header {
+  height: 20vh;
+  background-color: rgb(4, 8, 12);
+}
+.main-page {
+  overflow: hidden;
+  height: 170vh;
 }
 .main-nav-list {
   list-style: none;
@@ -31,7 +41,7 @@ body {
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: 500;
   font-size: 2.1vw;
   transition: all 0.3s;
@@ -86,7 +96,7 @@ body {
   font-family: engFont2;
   src: url(fonts/Hack-Regular.ttf);
 }
-header {
+.main {
   font-family: engFont;
   color: #ffffff;
   display: flex;
@@ -95,20 +105,14 @@ header {
   align-items: center;
   position: relative;
 }
-.skku-logo {
-  width: 5.46875vw;
-  height: 5.46875vw;
-  position: absolute;
-  top: 2vh;
-  left: 1.5625vw;
-}
 .world {
-  position: fixed;
+  position: flex;
   min-width: 100%;
-  min-height: 100%;
+  height: 100vh;
+  margin-top: 42vh;
   z-index: -100;
 }
-header .comit-logo {
+.comit-logo {
   font-size: 2vw;
   position: absolute;
   top: 5vh;
