@@ -128,9 +128,9 @@ body {
   z-index: -50;
 }
 .name {
-  font-size: 12.5vw;
+  font-size: 14vw;
   position: absolute;
-  top: 55vh;
+  top: 50vh;
   color: #ff4a4a;
   left: 7vw;
   font-family: engFontBold;
@@ -138,15 +138,33 @@ body {
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 49vh;
+  top: 40vh;
   left: 7vw;
-  font-size: 3.1vw;
+  font-size: 3.7vw;
   line-height: 1.5;
   color: #ffffff;
 }
+.btn-main {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 1.95vw;
+  border-color: #ffffff;
+  border: 0.2vw solid #ffffff;
+  background-color: transparent;
+  position: absolute;
+  height: 9vh;
+  width: 13vw;
+  bottom: 1vh;
+  left: 40vw;
+  padding-left: 3vw;
+  padding-top: 1.7vh;
+  font-family: korFont;
+  font-size: 1.9vw;
+  cursor: pointer;
+}
 .wrapper {
   position: absolute;
-  top: 35vh;
+  top: 28vh;
   left: 7vw;
   display: inline-flex;
 }
