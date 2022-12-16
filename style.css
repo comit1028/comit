@@ -39,6 +39,7 @@ body {
   font-family: engFontBold;
   color: #ff4a4a;
   margin-left: 1.5vw;
+  text-decoration: none;
 }
 .main-page {
   overflow: hidden;
