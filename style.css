@@ -22,24 +22,6 @@ body {
   font-family: engFont2;
   src: url(fonts/Hack-Regular.ttf);
 }
-/* 
-.background-container {
-  z-index: -100; 
-  background: linear-gradient(
-    to bottom,
-    #3b76ce,
-    #1c3a67,
-    #0c192c,
-    #0c192c,
-    #0c192c,
-    #0c192c
-  );
-  position: relative;
-  width: 100%;
-  height: 150vh;
-  overflow: hidden;
-} 
-*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -56,8 +38,9 @@ body {
   text-decoration: none;
 }
 .main-page {
+  display: relative;
   overflow: hidden;
-  height: 300vh;
+  height: 121vh;
   background-color: #ffffff;
 }
 .main-nav-list {
@@ -82,50 +65,20 @@ body {
 .main-nav-link:active {
   color: #ff4a4a;
 }
-/*
-.stars {
-  position: relative;
-  display: flex;
-}
-.stars span {
-  position: relative;
-  min-width: 20px;
-  min-height: 20px;
-  background: #4fc3dc;
-  margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0 0 0 6px #4fc3dc44, 0 0 30px #4fc3dc, 0 0 70px #4fc3dc;
-  animation: stars 30s linear infinite;
-  animation-duration: calc(120s / var(--i));
-}
-.stars span:nth-child(even) {
-  background: #07ffbdcd;
-  box-shadow: 0 0 0 6px #07ffbd45, 0 0 30px #07ffbd, 0 0 70px #07ffbd;
-}
-@keyframes stars {
-  0% {
-    transform: translateY(50vh) scale(0);
-  }
-  100% {
-    transform: translateY(-100vh) scale(1);
-  }
-}
-*/
-
 .main {
   font-family: engFont;
   color: #ffffff;
   display: flex;
-  height: 130vh;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 .earth {
   position: flex;
-  height: 130vh;
+  height: 100%;
+  width: 100%;
   margin-top: 0vh;
-  z-index: -50;
+  z-index: 0;
 }
 .name {
   font-size: 14vw;
@@ -144,24 +97,24 @@ body {
   line-height: 1.5;
   color: #ffffff;
 }
+/*
 .btn-main {
+  display: block;
   text-decoration: none;
   color: #ffffff;
-  border-radius: 1.95vw;
+  border-radius: 25px;
   border-color: #ffffff;
-  border: 0.2vw solid #ffffff;
+  border: 2.56px solid #ffffff;
   background-color: transparent;
   position: absolute;
-  height: 9vh;
-  width: 13vw;
-  bottom: 1vh;
-  left: 40vw;
-  padding-left: 3vw;
-  padding-top: 1.7vh;
+  height: 60px;
+  width: 100px;
+  bottom: 5.87px;
+  left: 512px;
   font-family: korFont;
   font-size: 1.9vw;
   cursor: pointer;
-}
+} */
 .wrapper {
   position: absolute;
   top: 28vh;
@@ -190,190 +143,6 @@ body {
 .dynamic-txts li .txt-lists {
   position: relative;
 }
-/*
-.dynamic-txts li .txt-lists::after {
-  content: "";
-  left: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  border-left: 0.3129890453834116vw solid #ffffff;
-  animation: typing 2.5s steps(17) infinite;
-}
-*/
-/*
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -1.75vw 0 1.75vw;
-  }
-} */
-.transition1 {
-  z-index: -100;
-  position: relative;
-  width: 100%;
-  height: 450vh;
-  background: radial-gradient(
-      farthest-corner at 50vw 100vw,
-      rgba(255, 0, 255, 0.5),
-      transparent
-    ),
-    linear-gradient(
-      to bottom right,
-      #050a11,
-      #0b1729,
-      #0c192c,
-      #3b76ce,
-      #0c192c,
-      #0c192c,
-      #0c192c,
-      #0c192c,
-      #0b1729
-    );
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.transition-text {
-  font-family: engFont2;
-  color: rgb(242, 234, 234);
-  font-size: 2.5vw;
-  bottom: 40vw;
-  position: absolute;
-} /*
-.transition-text .text-color1 {
-  background: linear-gradient(
-    to bottom right,
-    rgb(93, 142, 249),
-    #51e2f5,
-    #9df9df,
-    #07ffbd,
-    #51e2f5,
-    #9df9df
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
-.rocket1 {
-  width: 25vh;
-  height: 35vh;
-}
-.transition1 .rocket {
-  position: relative;
-  animation: fly 0.2s ease infinite;
-  top: 90vh;
-}
-@keyframes fly {
-  0%,
-  100% {
-    transform: translateY(-2px);
-  }
-  50% {
-    transform: translate(2px);
-  }
-}
-.transition1 .rocket::before {
-  content: "";
-  position: absolute;
-  top: -23vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2vw;
-  height: 28.347529812606474vh;
-  background: linear-gradient(transparent, #00d0ff0f, #00d0ff36, #00d0ffcb);
-}
-.transition1 .rocket::after {
-  content: "";
-  position: absolute;
-  top: -23vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1.8018018018018018vw;
-  height: 34.07155025553663vh;
-  background: linear-gradient(transparent, #00d0ff);
-  filter: blur(1.5625vw);
-}
-
-.transition1 i {
-  position: absolute;
-  top: -48vh;
-  background: rgba(255, 255, 255, 0.5);
-  animation: animateStars linear infinite;
-}
-@keyframes animateStars {
-  100% {
-    transform: translateY(0);
-  }
-  0% {
-    transform: translateY(440vh);
-  }
-}
-.transition-buffer {
-  background-image: url(images/transition-2.svg);
-  aspect-ratio: 960/400;
-  width: 100%;
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.classes {
-  /*분반 페이지*/
-  font-family: korFont;
-  font-size: 1.7vw;
-  color: whitesmoke;
-  background: #9900ff;
-  display: flex;
-  height: 150vh;
-  justify-content: center;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 5vw;
-}
-.box {
-  position: relative;
-  width: 25vw;
-  height: 45vh;
-  background: #052551;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box .content {
-  flex-direction: column;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.js-logo {
-  height: 18vh;
-  width: 13.5vw;
-  margin-bottom: 2vh;
-}
-
-.python-logo {
-  height: 20.3vh;
-  width: 9vw;
-}
-.c-logo {
-  height: 20vh;
-  width: 13.5vw;
-  margin-bottom: 2vh;
-}
-.ms-logo {
-  height: 20vh;
-  width: 15vw;
-  margin-bottom: 1vh;
-}
 footer {
   font-family: engFont;
   font-size: 3.3vw;
@@ -383,4 +152,18 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.about-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.notice-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+.comit-echo-page {
+  background-color: #ffffff;
+  min-height: 100vh;
 }
