@@ -127,6 +127,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .gallery {
+    top: 200px;
+    left: 50px;
+  }
   .clipped-border {
     width: 100px;
     height: 100px;
@@ -149,5 +153,9 @@ img {
   .clipped-border:nth-child(5) {
     top: 82px;
     left: 150px;
+  }
+  .clipped-border:nth-child(6) {
+    top: 82px;
+    left: 250px;
   }
 }

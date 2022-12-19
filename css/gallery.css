@@ -8,12 +8,12 @@ body {
 
 div.shelfTitle {
   position: fixed;
-  top: 3.3rem;
+  top: 50px;
   left: 0;
   overflow: hidden;
   display: block;
   width: 100%;
-  height: 5em;
+  height: 50px;
   background: #2d2d2d;
   box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -26,7 +26,7 @@ div.shelfTitle ul.nav li {
   margin: 0 10px;
 }
 div.shelfTitle ul.nav li:first-child {
-  margin-left: 125px;
+  margin-left: 50px;
 }
 div.shelfTitle ul.nav li a {
   display: block;
@@ -323,4 +323,11 @@ body.view-5-shelf .roll-camera .move-camera {
 img:hover {
   -webkit-transform: scale(2.5); /* or some other value */
   transform: scale(2.5);
+}
+
+@media screen and (max-width: 500px) {
+  div.shelfTitle {
+    font-size: 5px;
+    height: 30px;
+  }
 }
