@@ -149,9 +149,6 @@ footer {
   font-family: engFont;
   font-size: 3.3vw;
   background: #03132b;
-  display: flex;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 100%;
+  height: 30px;
 }
