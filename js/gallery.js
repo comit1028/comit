@@ -1,4 +1,4 @@
-$(function () {
+$(document).load(function () {
   var centerShelfs,
     $body = $('body'),
     $topShelf = $('.shelf.num1'),
@@ -26,4 +26,5 @@ $(function () {
   $('.nav a').on('click', moveToShelf);
 
   // move to start position
+  centerShelfs();
 });
