@@ -155,17 +155,3 @@ footer {
   align-items: center;
   position: relative;
 }
-
-.about-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-
-.notice-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-.comit-echo-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
