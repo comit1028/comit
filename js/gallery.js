@@ -26,9 +26,4 @@ $(function () {
   $('.nav a').on('click', moveToShelf);
 
   // move to start position
-  centerShelfs();
-
-  window.setTimeout(function () {
-    $body.addClass('view-2-shelf');
-  }, 500);
 });
