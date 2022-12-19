@@ -1,20 +1,20 @@
 $(function () {
   var centerShelfs,
     $body = $('body'),
-    $topShelf = $('.shelf.num1'),
-    $middleShelf = $('.shelf.num2'),
-    $bottomShelf = $('.shelf.num3'),
-    $addedShelf = $('.shelf.num4'),
-    $num5Shelf = $('.shelf.num4');
+    $num1Shelf = $('.shelf.num1'),
+    $num2Shelf = $('.shelf.num2'),
+    $num3Shelf = $('.shelf.num3'),
+    $num4Shelf = $('.shelf.num4'),
+    $num5Shelf = $('.shelf.num5');
 
   centerShelfs = function () {
     var topShelfPosition = $body.height() / 2;
 
-    $topShelf.css('top', topShelfPosition);
-    $middleShelf.css('top', topShelfPosition + 200);
-    $bottomShelf.css('top', topShelfPosition + 400);
-    $addedShelf.css('top', topShelfPosition + 600);
-    $num5Shelf.css('top', topShelfPosition + 600);
+    $num1Shelf.css('top', topShelfPosition);
+    $num2Shelf.css('top', topShelfPosition + 200);
+    $num3Shelf.css('top', topShelfPosition + 400);
+    $num4Shelf.css('top', topShelfPosition + 600);
+    $num5Shelf.css('top', topShelfPosition + 800);
   };
 
   moveToShelf = function (e) {
