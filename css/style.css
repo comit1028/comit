@@ -45,7 +45,7 @@ body {
   display: relative;
   overflow: hidden;
   height: 121vh;
-  background-color: #ffffff;
+  background-color: white;
 }
 .main-nav-list {
   list-style: none;
@@ -71,33 +71,34 @@ body {
 }
 .main {
   font-family: engFont;
-  color: #ffffff;
+  color: orange;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 .earth {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  margin-top: 0vh;
   z-index: 0;
 }
 .name {
   font-size: 14vw;
   position: absolute;
-  top: 50vh;
+  top: 200px;
   color: #ff4a4a;
-  left: 7vw;
+  left: 50px;
   font-family: engFontBold;
 }
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 40vh;
-  left: 7vw;
+  top: 150px;
+  left: 70px;
   font-size: 3.7vw;
   line-height: 1.5;
-  color: #ffffff;
+  color: orange;
 }
 /*
 .btn-main {
@@ -119,8 +120,8 @@ body {
 } */
 .wrapper {
   position: absolute;
-  top: 28vh;
-  left: 7vw;
+  top: 100px;
+  left: 70px;
   display: inline-flex;
 }
 .dynamic-txts {
@@ -130,7 +131,7 @@ body {
 }
 .dynamic-txts li {
   font-family: korFont;
-  color: #ffffff;
+  color: orange;
   font-size: 3.7vw;
   top: 0;
   list-style: none;
@@ -149,23 +150,6 @@ footer {
   font-family: engFont;
   font-size: 3.3vw;
   background: #03132b;
-  display: flex;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.about-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-
-.notice-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-.comit-echo-page {
-  background-color: #ffffff;
-  min-height: 100vh;
+  width: 100%;
+  height: 30px;
 }
