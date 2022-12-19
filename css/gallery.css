@@ -77,6 +77,14 @@ div.shelfTitle ul.nav li a {
     transform: rotateX(0) translateZ(0);
   }
 }
+@-webkit-keyframes zoom-roll-added {
+  50% {
+    transform: rotateX(-10deg) translateZ(-200px);
+  }
+  100% {
+    transform: rotateX(0) translateZ(0);
+  }
+}
 @-moz-keyframes zoom-roll-top {
   50% {
     transform: rotateX(-10deg) translateZ(-200px);
@@ -94,6 +102,14 @@ div.shelfTitle ul.nav li a {
   }
 }
 @-moz-keyframes zoom-roll-bottom {
+  50% {
+    transform: rotateX(-10deg) translateZ(-200px);
+  }
+  100% {
+    transform: rotateX(0) translateZ(0);
+  }
+}
+@-moz-keyframes zoom-roll-added {
   50% {
     transform: rotateX(-10deg) translateZ(-200px);
   }
@@ -130,6 +146,13 @@ body.view-3-shelf .roll-camera {
 }
 body.view-3-shelf .roll-camera .move-camera {
   transform: translateY(-400px);
+}
+
+body.view-4-shelf .roll-camera {
+  animation: zoom-roll-added 3s ease-in-out;
+}
+body.view-4-shelf .roll-camera .move-camera {
+  transform: translateY(-600px);
 }
 
 .wallpaper {
