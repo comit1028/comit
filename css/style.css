@@ -86,7 +86,7 @@ body {
 .name {
   font-size: 14vw;
   position: absolute;
-  top: 300px;
+  top: 200px;
   color: #ff4a4a;
   left: 50px;
   font-family: engFontBold;
@@ -94,7 +94,7 @@ body {
 .sub-title {
   font-family: korFont;
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: 70px;
   font-size: 3.7vw;
   line-height: 1.5;
