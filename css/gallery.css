@@ -132,13 +132,6 @@ body.view-3-shelf .roll-camera .move-camera {
   transform: translateY(-400px);
 }
 
-body.view-4-shelf .roll-camera {
-  animation: zoom-roll-bottom 3s ease-in-out;
-}
-body.view-4-shelf .roll-camera .move-camera {
-  transform: translateY(-400px);
-}
-
 .wallpaper {
   position: absolute;
   width: 200%;

@@ -27,6 +27,6 @@ $(function () {
   centerShelfs();
 
   window.setTimeout(function () {
-    $body.addClass('view-middle-shelf');
+    $body.addClass('view-2-shelf');
   }, 500);
 });
