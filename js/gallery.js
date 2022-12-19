@@ -1,4 +1,4 @@
-$(document).load(function () {
+$(function () {
   var centerShelfs,
     $body = $('body'),
     $topShelf = $('.shelf.num1'),
