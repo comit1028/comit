@@ -325,9 +325,8 @@ img:hover {
   transform: scale(2.5);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   div.shelfTitle {
     font-size: 5px;
-    height: 30px;
   }
 }
