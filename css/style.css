@@ -8,19 +8,23 @@ body {
 }
 @font-face {
   font-family: engFont;
-  src: url(fonts/DaytonaPro-Regular.ttf);
+  src: url(/fonts/DaytonaPro-Regular.ttf) format(truetype);
 }
 @font-face {
   font-family: engFontBold;
-  src: url(fonts/DaytonaPro-Bold.ttf);
+  src: url(/fonts/DaytonaPro-Bold.ttf) format(truetype);
 }
 @font-face {
   font-family: korFont;
-  src: url(fonts/MICEGothic.ttf);
+  src: url(/fonts/MICEGothic.ttf) format(truetype);
 }
 @font-face {
   font-family: engFont2;
-  src: url(fonts/Hack-Regular.ttf);
+  src: url(/fonts/Hack-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: korFont2;
+  src: url(/fonts/SCDream5.otf) format(opentype);
 }
 .header {
   display: flex;
