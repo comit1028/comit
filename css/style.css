@@ -3,31 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
-}
 @font-face {
   font-family: engFont;
-  src: url(/fonts/DaytonaPro-Regular.ttf) format(truetype);
+  src: url(/fonts/DaytonaPro-Regular.ttf);
+  font-weight: normal;
 }
 @font-face {
-  font-family: engFontBold;
+  font-family: "engFontBold";
   src: url(/fonts/DaytonaPro-Bold.ttf) format(truetype);
 }
 @font-face {
-  font-family: korFont;
+  font-family: "korFont";
   src: url(/fonts/MICEGothic.ttf) format(truetype);
 }
 @font-face {
-  font-family: engFont2;
+  font-family: "engFont2";
   src: url(/fonts/Hack-Regular.ttf) format(truetype);
 }
 @font-face {
-  font-family: korFont2;
+  font-family: "korFont2";
   src: url(/fonts/SCDream5.otf) format(opentype);
+}
+body {
+  min-height: 100vh;
 }
 .header {
   display: flex;
+  font-family: engFont;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +48,6 @@ body {
   text-decoration: none;
 }
 .main-page {
-  display: relative;
   overflow: hidden;
   height: 121vh;
   background-color: white;
@@ -81,79 +82,6 @@ body {
   align-items: center;
   position: relative;
 }
-.earth {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-}
-.name {
-  font-size: 14vw;
-  position: absolute;
-  top: 200px;
-  color: #ff4a4a;
-  left: 50px;
-  font-family: engFontBold;
-}
-.sub-title {
-  font-family: korFont;
-  position: absolute;
-  top: 150px;
-  left: 70px;
-  font-size: 3.7vw;
-  line-height: 1.5;
-  color: orange;
-}
-/*
-.btn-main {
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 25px;
-  border-color: #ffffff;
-  border: 2.56px solid #ffffff;
-  background-color: transparent;
-  position: absolute;
-  height: 60px;
-  width: 100px;
-  bottom: 5.87px;
-  left: 512px;
-  font-family: korFont;
-  font-size: 1.9vw;
-  cursor: pointer;
-} */
-.wrapper {
-  position: absolute;
-  top: 100px;
-  left: 70px;
-  display: inline-flex;
-}
-.dynamic-txts {
-  overflow: hidden;
-  line-height: 4.5vw;
-  height: 4.5vw;
-}
-.dynamic-txts li {
-  font-family: korFont;
-  color: orange;
-  font-size: 3.7vw;
-  top: 0;
-  list-style: none;
-  position: relative;
-  animation: slide 10s steps(4) infinite;
-}
-@keyframes slide {
-  100% {
-    top: -18vw;
-  }
-}
-.dynamic-txts li .txt-lists {
-  position: relative;
-}
+
 footer {
-  font-family: engFont;
-  font-size: 3.3vw;
-  background: #03132b;
-  width: 100%;
-  height: 30px;
 }
