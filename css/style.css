@@ -185,6 +185,7 @@ footer {
   flex-flow: column;
   gap: 8px;
   font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
   color: #767676;
   padding-right: 10px;
   justify-content: center;
