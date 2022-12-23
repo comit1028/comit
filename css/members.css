@@ -7,7 +7,7 @@
 
 html,
 body {
-  background: radial-gradient(mistyrose, pink);
+  background: #fff;
   height: 100%;
   width: 100%;
   position: relative;
@@ -23,7 +23,7 @@ body {
 }
 
 .gallery:after {
-  content: '';
+  content: "";
 }
 
 .shadow {
@@ -65,7 +65,7 @@ img {
 }
 
 .clipped-border:before {
-  content: '';
+  content: "";
   position: absolute;
   opacity: 0.5;
   width: 350px;
