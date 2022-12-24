@@ -2,89 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Comit-website</title>
+    <title>COMIT-성균관대학교 중앙 코딩 동아리</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
+  <!----->
   <body>
     <main>
       <header class="header">
-        <a class="comit-logo" href="#"
-          ><p><strong>COM!T</strong></p></a
-        >
+        <a href="#"
+          ><img class="logo" alt="COMIT Logo" src="images/COMIT.JPG"
+        /></a>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
               <a class="main-nav-link" href="index.html"
-                ><strong>HOME</strong></a
+                ><strong>Home</strong></a
               >
             </li>
             <li>
-              <a class="main-nav-link" href="#"><strong>ABOUT</strong></a>
+              <a class="main-nav-link" href="views/about.html"
+                ><strong>About</strong></a
+              >
             </li>
             <li>
               <a class="main-nav-link" href="views/gallery.html"
-                ><strong>GALLERY </strong></a
+                ><strong>Gallery</strong></a
               >
             </li>
             <li>
-              <a class="main-nav-link" href="#"><strong>COMIT-ECO</strong></a>
+              <a class="main-nav-link" href="views/members.html"
+                ><strong>Members</strong></a
+              >
             </li>
           </ul>
         </nav>
       </header>
       <section class="main-page">
-        <video autoplay muted loop class="earth">
-          <source src="images/World - 2.mp4" type="video/mp4" />
-        </video>
-        <div class="wrapper">
-          <ul class="dynamic-txts">
-            <li>
-              <span class="txt-lists"
-                ><b
-                  ><span style="color: #ff4a4a">최고의 인재</span>들이 모이는</b
-                ></span
-              >
-            </li>
-            <li>
-              <span class="txt-lists"
-                ><b
-                  ><span style="color: #ff4a4a">가장 멋진 사람들</span>이
-                  함께하는</b
-                ></span
-              >
-            </li>
-            <li>
-              <span class="txt-lists"
-                ><b
-                  ><span style="color: #ff4a4a">열정만</span> 있다면 누구나 참여
-                  가능한</b
-                ></span
-              >
-            </li>
-            <li>
-              <span class="txt-lists"
-                ><b
-                  ><span style="color: #ff4a4a">끝없는 도전</span>을 추구하는</b
-                >
-              </span>
-            </li>
-          </ul>
+        <div class="main">
+          <div class="main-text-box">
+            <h1 class="primary-heading">
+              "개발자를 꿈꾸는 <br />모든 학생들을 위하여"
+            </h1>
+            <p class="sub-heading">
+              모든 학생들이 다양한 사람들과 교류하고 협력하며 즐겁게 코딩을
+              <br />
+              할 수 있는 환경을 만들기 위해 노력하는 성균관대학교 공과대학
+              <br />중앙 코딩 동아리 COM!T 입니다.
+            </p>
+            <a href="#" class="btn btn--full btn--outline">
+              <div class="el-1">지원하기</div>
+              <img src="images/arrow.svg" class="el-2" />
+            </a>
+          </div>
+          <div class="main-image-box">
+            <img
+              class="main-image"
+              src="images/main-img.svg"
+              alt="A kid pointing at the sky"
+            />
+          </div>
         </div>
-        <p class="name">COM!T</p>
-        <a href="#" class="btn-main">지원하기</a>
-        <p class="sub-title">
-          <b>성균관대학교 공과대학</b>
-          <span style="color: #ffffff"><strong>중앙 코딩 동아리</strong></span>
-        </p>
       </section>
-      <section class="about-page"><p>About</p></section>
-      <section class="notice-page"><p>Notice</p></section>
-      <section class="comit-echo-page"><p>Comit-Echo</p></section>
-
-      <section></section>
-
-      <script src="js/main.js"></script>
     </main>
-    <footer></footer>
+
+    <footer>
+      <p>Made by Young Leigh & Ji Hwan Park</p>
+      <p>Example@gmail.com</p>
+      <p>Copyright © COMIT All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

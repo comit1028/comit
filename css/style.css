@@ -1,58 +1,95 @@
+/*
+--- 01 Typography system
+- Font sizes(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+
+- Line heights
+Default: 1
+
+--- 02 COLORS
+
+- Primary: #9900FF
+- Tints:
+- Shades:
+- Accents: 
+- Greys: 
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+-- 05 Shadows
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+-- 06 Border-Radius
+Default: 9px
+Medium: 11px
+
+-- 07 WhiteSpace
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
+html {
+  overflow-x: hidden;
 }
 @font-face {
   font-family: engFont;
-  src: url(fonts/DaytonaPro-Regular.ttf);
+  src: url("../fonts/DaytonaPro-Regular.ttf") format(truetype);
 }
 @font-face {
-  font-family: engFontBold;
-  src: url(fonts/DaytonaPro-Bold.ttf);
+  font-family: "engFontBold";
+  src: url("../fonts/DaytonaPro-Bold.ttf") format(truetype);
 }
 @font-face {
-  font-family: korFont;
-  src: url(fonts/MICEGothic.ttf);
+  font-family: "korFont";
+  src: url("../fonts/MICEGothic.ttf") format(truetype);
 }
 @font-face {
-  font-family: engFont2;
-  src: url(fonts/Hack-Regular.ttf);
+  font-family: "engFont2";
+  src: url("../fonts/Hack-Regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: "korFont2";
+  src: url("../fonts/SCDream4.otf") format(opentype);
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: visible;
 }
 .header {
+  font-family: engFont;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  height: 3.3rem;
+  height: 55px;
+  padding: 0 15px;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1;
+  width: 100%;
+  box-shadow: 0 1px 2.5px 0 rgba(199, 199, 199, 0.201);
 }
-.comit-logo {
-  font-size: 2.2vw;
-  font-family: engFont;
-  color: #ff4a4a;
-  margin-left: 1.5vw;
-  text-decoration: none;
-}
-.main-page {
-  display: relative;
-  overflow: hidden;
-  height: 121vh;
-  background-color: #ffffff;
+.logo {
+  height: 30px;
 }
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3vw;
-  margin-top: 0vh;
-  margin-right: 2vw;
+  gap: 35px;
+  margin-right: 15px;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -60,112 +97,105 @@ body {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 16px;
   transition: all 0.3s;
   font-family: engFont;
   transition: all 0.3s;
 }
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #ff4a4a;
+  color: #9900ff;
+}
+.main-page {
+  background-color: #ffffff;
 }
 .main {
-  font-family: engFont;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 0 100px 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  position: relative;
 }
-.earth {
-  position: absolute;
-  margin-top: 0vh;
-  z-index: 0;
+.main-text-box {
+  padding-left: 50px;
+  padding-bottom: 50px;
+  width: 600px;
 }
-.name {
-  font-size: 14vw;
-  position: absolute;
-  top: 50vh;
-  color: #ff4a4a;
-  left: 7vw;
-  font-family: engFontBold;
+.primary-heading {
+  font-size: 55px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  font-family: korFont2;
+  font-weight: normal;
 }
-.sub-title {
+.sub-heading {
   font-family: korFont;
-  position: absolute;
-  top: 40vh;
-  left: 7vw;
-  font-size: 3.7vw;
-  line-height: 1.5;
-  color: #ffffff;
+  color: #767676;
+  line-height: 1.3;
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 700px;
 }
-/*
-.btn-main {
-  display: block;
+.main-image {
+  width: 550px;
+}
+.main-image-box {
+  padding-bottom: 50px;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  width: 140px;
+  display: flex;
   text-decoration: none;
-  color: #ffffff;
-  border-radius: 25px;
-  border-color: #ffffff;
-  border: 2.56px solid #ffffff;
-  background-color: transparent;
-  position: absolute;
-  height: 60px;
-  width: 100px;
-  bottom: 5.87px;
-  left: 512px;
-  font-family: korFont;
-  font-size: 1.9vw;
+  font-size: 20px;
+  border-radius: 20px;
   cursor: pointer;
-} */
-.wrapper {
-  position: absolute;
-  top: 28vh;
-  left: 7vw;
-  display: inline-flex;
-}
-.dynamic-txts {
-  overflow: hidden;
-  line-height: 4.5vw;
-  height: 4.5vw;
-}
-.dynamic-txts li {
   font-family: korFont;
-  color: #ffffff;
-  font-size: 3.7vw;
-  top: 0;
-  list-style: none;
-  position: relative;
-  animation: slide 10s steps(4) infinite;
+  transition: all 0.3s;
+  border: 1.5px solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  margin-left: 350px;
+  margin-top: 50px;
 }
-@keyframes slide {
-  100% {
-    top: -18vw;
-  }
+.el-1 {
+  padding-right: 10px;
 }
-.dynamic-txts li .txt-lists {
-  position: relative;
+.el-2 {
+  width: 25px;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: white;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #deddddc2;
+  box-shadow: inset 0 0 0 1.5px #fff;
 }
 footer {
-  font-family: engFont;
-  font-size: 3.3vw;
-  background: #03132b;
+  background-color: rgba(229, 229, 229, 0.854);
+  height: 100px;
   display: flex;
-  height: 50vh;
+  flex-flow: column;
+  gap: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #767676;
+  padding-right: 10px;
   justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.about-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-
-.notice-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-.comit-echo-page {
-  background-color: #ffffff;
-  min-height: 100vh;
+  align-items: flex-end;
+  bottom: 0;
+  width: 100%;
 }
