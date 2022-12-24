@@ -108,16 +108,18 @@ body {
   background-color: #ffffff;
 }
 .main {
-  max-width: 100%;
-  height: 100vh;
+  max-width: 1300px;
   margin: 0 auto;
+  height: 100vh;
   padding: 0 100px 0 100px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 .main-text-box {
-  padding-bottom: 50px;
   padding-left: 50px;
+  padding-bottom: 50px;
+  width: 600px;
 }
 .primary-heading {
   font-size: 55px;
@@ -135,10 +137,11 @@ body {
   width: 700px;
 }
 .main-image {
-  height: 600px;
+  width: 550px;
 }
 .main-image-box {
-  padding-right: 100px;
+  padding-bottom: 50px;
+  margin-right: 50px;
 }
 .btn,
 .btn:link,
@@ -176,7 +179,7 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #deddddc2;
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 1.5px #fff;
 }
 footer {
   background-color: rgba(229, 229, 229, 0.854);
