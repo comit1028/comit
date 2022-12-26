@@ -16,19 +16,41 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: korFont;
-  gap: 30px;
+  font-family: korFont2;
 }
-.intro p span {
-  font-family: engFont;
+.intro h1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 .intro h1 span {
-  font-size: 35px;
+  font-size: 50px;
+  font-family: engFont;
 }
 .about-text {
-  border: 1px solid transparent;
-  border-bottom-color: grey;
-  width: 50%;
+  border-bottom-color: #767676;
+  margin: 50px auto 25px auto;
+  font-size: 25px;
+  font-family: korFont2;
+}
+.sub-text {
+  width: 670px;
+  font-family: korFont;
+  margin: 30px auto 0 auto;
+  line-height: 3;
+  color: #838383;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+.sub-text-span {
+  gap: 30px;
+}
+.paint-box {
+  height: 400px;
+}
+.paint2 {
+  height: 400px;
 }
 .classes {
   display: flex;
@@ -36,6 +58,7 @@ section {
   width: 100%;
   justify-content: center;
   gap: 30px;
+  margin-top: 50px;
 }
 .container {
   width: 200px;
