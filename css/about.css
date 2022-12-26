@@ -62,7 +62,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
   margin-bottom: 40px;
 }
 .container-activity {
@@ -84,7 +84,7 @@ section {
 .activity-subtext {
   font-size: 15px;
   color: #767676;
-  text-align: center;
+  text-align: left;
   font-family: korFont;
   line-height: 1.3;
 }
