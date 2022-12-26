@@ -166,4 +166,10 @@ section {
   margin: 150px auto 150px auto;
   line-height: 1.5;
   justify-content: center;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.clock-image {
+  height: 320px;
 }
