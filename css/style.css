@@ -46,23 +46,23 @@ html {
 }
 @font-face {
   font-family: engFont;
-  src: url("../fonts/DaytonaPro-Regular.ttf") format(truetype);
+  src: url('../fonts/DaytonaPro-Regular.ttf') format(truetype);
 }
 @font-face {
-  font-family: "engFontBold";
-  src: url("../fonts/DaytonaPro-Bold.ttf") format(truetype);
+  font-family: 'engFontBold';
+  src: url('../fonts/DaytonaPro-Bold.ttf') format(truetype);
 }
 @font-face {
-  font-family: "korFont";
-  src: url("../fonts/MICEGothic.ttf") format(truetype);
+  font-family: 'korFont';
+  src: url('../fonts/MICEGothic.ttf') format(truetype);
 }
 @font-face {
-  font-family: "engFont2";
-  src: url("../fonts/Hack-Regular.ttf") format(truetype);
+  font-family: 'engFont2';
+  src: url('../fonts/Hack-Regular.ttf') format(truetype);
 }
 @font-face {
-  font-family: "korFont2";
-  src: url("../fonts/SCDream4.otf") format(opentype);
+  font-family: 'korFont2';
+  src: url('../fonts/SCDream4.otf') format(opentype);
 }
 body {
   line-height: 1;
@@ -74,7 +74,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: rgb(238, 236, 236);
   height: 55px;
   padding: 0 15px;
   position: fixed;
@@ -84,6 +84,7 @@ body {
 }
 .logo {
   height: 30px;
+  width: 100px;
 }
 .main-nav-list {
   list-style: none;
@@ -190,7 +191,7 @@ footer {
   display: flex;
   flex-flow: column;
   gap: 8px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   color: #767676;
   padding-right: 10px;
@@ -198,4 +199,33 @@ footer {
   align-items: flex-end;
   bottom: 0;
   width: 100%;
+}
+
+/* Code for Tablet screen */
+@media screen and (max-width: 1080px) {
+}
+
+/* Code for phone screen */
+@media screen and (max-width: 720px) {
+  .main {
+    grid-template-columns: auto;
+    grid-gap: 0px;
+    height: 130vh;
+  }
+  .primary-heading {
+    font-size: 16px;
+  }
+  .sub-heading {
+    width: 300px;
+    font-size: 16px;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  .main-image {
+    width: 450px;
+  }
 }

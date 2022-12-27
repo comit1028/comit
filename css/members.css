@@ -23,7 +23,7 @@ body {
 }
 
 .gallery:after {
-  content: "";
+  content: '';
 }
 
 .shadow {
@@ -65,7 +65,7 @@ img {
 }
 
 .clipped-border:before {
-  content: "";
+  content: '';
   position: absolute;
   opacity: 0.5;
   width: 350px;
@@ -126,7 +126,7 @@ img {
   z-index: 10;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 720px) {
   .gallery {
     top: 200px;
     left: 50px;
@@ -157,5 +157,13 @@ img {
   .clipped-border:nth-child(6) {
     top: 82px;
     left: 250px;
+  }
+  .shadow {
+    top: 300px;
+    left: 0;
+    width: 400px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(#805d78, rgba(0, 0, 0, 0) 70%);
   }
 }
