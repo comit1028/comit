@@ -1,21 +1,6 @@
-function stars() {
-  let count = 50;
-  let scene = document.querySelector('.transition1');
-  let i = 0;
-  while (i < count) {
-    let star = document.createElement('i');
-    let x = Math.floor(Math.random() * window.innerWidth);
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 
-    let duration = Math.random() * 1;
-    let h = Math.random() * 100;
-
-    star.style.left = x + 'px';
-    star.style.width = 1 + 'px';
-    star.style.height = 50 + h + 'px';
-    star.style.animationDuration = duration + 's';
-
-    scene.appendChild(star);
-    i++;
-  }
-}
-stars();
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
