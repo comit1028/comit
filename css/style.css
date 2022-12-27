@@ -206,26 +206,33 @@ footer {
 }
 
 /* Code for phone screen */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 450px) {
   .main {
     grid-template-columns: auto;
     grid-gap: 0px;
     height: 130vh;
+    padding: 0;
   }
   .primary-heading {
-    font-size: 16px;
+    margin: 0px 0 30px 0;
+    font-size: 33px;
+    padding-top: 20px;
   }
   .sub-heading {
     width: 300px;
-    font-size: 16px;
+    font-size: 15px;
   }
   .btn,
   .btn:link,
   .btn:visited {
-    margin-left: 150px;
-    margin-top: 50px;
+    margin-left: 0;
+    margin-top: 25px;
   }
   .main-image {
     width: 450px;
+    margin-top: -180px;
+  }
+  footer {
+    width: auto;
   }
 }
