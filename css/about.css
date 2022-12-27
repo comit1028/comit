@@ -13,8 +13,9 @@ section {
   height: 100%;
 }
 .laptop-img {
-  height: 220px;
-  margin-right: 35px;
+  height: 350px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 .intro {
   display: flex;
@@ -23,21 +24,21 @@ section {
   font-family: korFont2;
 }
 .intro h1 {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 40px;
   line-height: 1.5;
-  width: 800px;
+  width: 900px;
   margin: 20px auto;
   margin-top: 10px;
 }
 .intro h1 span {
-  font-size: 50px;
+  font-size: 60px;
   font-family: engFont;
 }
 .about-text {
   border-bottom-color: #767676;
   margin: 50px auto 50px auto;
-  font-size: 25px;
+  font-size: 35px;
   font-family: korFont2;
 }
 .sub-text {
@@ -48,6 +49,7 @@ section {
   font-size: 25px;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 .sub-text-span {
   gap: 30px;
@@ -62,13 +64,13 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 60px;
+  gap: 95px;
   margin-bottom: 40px;
 }
 .container-activity {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 300px;
   height: 350px;
   margin-top: 20px;
 }
@@ -78,13 +80,13 @@ section {
 .activity-title {
   font-size: 30px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: korFont2;
 }
 .activity-subtext {
-  font-size: 15px;
+  font-size: 17px;
   color: #767676;
-  text-align: left;
+  text-align: center;
   font-family: korFont;
   line-height: 1.3;
 }
