@@ -74,13 +74,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(225, 223, 223);
+  background-color: white;
   height: 55px;
   padding: 0 15px;
   position: fixed;
   z-index: 1;
   width: 100%;
-  box-shadow: 0 1px 2.5px 0 rgba(199, 199, 199, 0.201);
+  box-shadow: 0 1px 2.5px 0 rgba(29, 26, 26, 0.201);
   top: 0px;
 }
 .logo {
