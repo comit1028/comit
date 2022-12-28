@@ -46,23 +46,23 @@ html {
 }
 @font-face {
   font-family: engFont;
-  src: url("../fonts/DaytonaPro-Regular.ttf") format(truetype);
+  src: url('../fonts/DaytonaPro-Regular.ttf') format(truetype);
 }
 @font-face {
-  font-family: "engFontBold";
-  src: url("../fonts/DaytonaPro-Bold.ttf") format(truetype);
+  font-family: 'engFontBold';
+  src: url('../fonts/DaytonaPro-Bold.ttf') format(truetype);
 }
 @font-face {
-  font-family: "korFont";
-  src: url("../fonts/MICEGothic.ttf") format(truetype);
+  font-family: 'korFont';
+  src: url('../fonts/MICEGothic.ttf') format(truetype);
 }
 @font-face {
-  font-family: "engFont2";
-  src: url("../fonts/Hack-Regular.ttf") format(truetype);
+  font-family: 'engFont2';
+  src: url('../fonts/Hack-Regular.ttf') format(truetype);
 }
 @font-face {
-  font-family: "korFont2";
-  src: url("../fonts/SCDream4.otf") format(opentype);
+  font-family: 'korFont2';
+  src: url('../fonts/SCDream4.otf') format(opentype);
 }
 body {
   line-height: 1;
@@ -121,7 +121,7 @@ body {
   width: 35px;
   color: black;
 }
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 .main-page {
@@ -135,7 +135,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 10%;
   margin-top: 100px;
 }
 .main-text-box {
@@ -211,7 +211,7 @@ footer {
   display: flex;
   flex-flow: column;
   gap: 8px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   color: #767676;
   padding-right: 10px;
