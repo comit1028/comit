@@ -175,3 +175,36 @@ section {
 .clock-image {
   height: 320px;
 }
+
+/* Code for phone screen */
+@media screen and (max-width: 450px) {
+  .intro h1 {
+    width: 350px;
+    font-size: 23px;
+  }
+  .intro h1 span {
+    font-size: 33px;
+  }
+  .laptop-img {
+    height: 250px;
+  }
+  .sub-text {
+    font-size: 15px;
+  }
+  .activities {
+    flex-direction: column;
+    align-items: center;
+  }
+  .classes {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .ending-text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
