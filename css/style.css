@@ -46,23 +46,23 @@ html {
 }
 @font-face {
   font-family: engFont;
-  src: url('../fonts/DaytonaPro-Regular.ttf') format(truetype);
+  src: url("../fonts/DaytonaPro-Regular.ttf") format(truetype);
 }
 @font-face {
-  font-family: 'engFontBold';
-  src: url('../fonts/DaytonaPro-Bold.ttf') format(truetype);
+  font-family: "engFontBold";
+  src: url("../fonts/DaytonaPro-Bold.ttf") format(truetype);
 }
 @font-face {
-  font-family: 'korFont';
-  src: url('../fonts/MICEGothic.ttf') format(truetype);
+  font-family: "korFont";
+  src: url("../fonts/MICEGothic.ttf") format(truetype);
 }
 @font-face {
-  font-family: 'engFont2';
-  src: url('../fonts/Hack-Regular.ttf') format(truetype);
+  font-family: "engFont2";
+  src: url("../fonts/Hack-Regular.ttf") format(truetype);
 }
 @font-face {
-  font-family: 'korFont2';
-  src: url('../fonts/SCDream4.otf') format(opentype);
+  font-family: "korFont2";
+  src: url("../fonts/SCDream4.otf") format(opentype);
 }
 body {
   line-height: 1;
@@ -121,7 +121,7 @@ body {
   width: 35px;
   color: black;
 }
-.icon-mobile-nav[name='close-outline'] {
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 .main-page {
@@ -211,7 +211,7 @@ footer {
   display: flex;
   flex-flow: column;
   gap: 8px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 15px;
   color: #767676;
   padding-right: 10px;
@@ -279,7 +279,7 @@ footer {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in;
     pointer-events: none;
     visibility: hidden;
     transform: translateX(100%);
@@ -294,12 +294,12 @@ footer {
 
   .main-nav-list {
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
     margin-top: 50%;
   }
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 25px;
+    font-size: 40px;
   }
 }

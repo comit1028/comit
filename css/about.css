@@ -194,11 +194,12 @@ section {
   .activities {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
   .classes {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
   }
   .container {
     margin-left: 0;
