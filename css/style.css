@@ -85,7 +85,7 @@ body {
 }
 .logo {
   height: 75px;
-  width: 100px;
+  width: 75px;
 }
 .main-nav-list {
   list-style: none;
@@ -235,9 +235,6 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     padding-left: 0px;
-  }
-  .logo{
-    width: 75px;
   }
   .main-text-box {
     padding-left: 30px;
