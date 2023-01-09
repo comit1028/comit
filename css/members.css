@@ -188,7 +188,7 @@ img {
   }
   .gallery {
     top: 100px;
-    left: 25px;
+    left: 0px;
     height: 500px;
   }
   .clipped-border {
