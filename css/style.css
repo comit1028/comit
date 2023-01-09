@@ -75,7 +75,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 100px;
+  height: 75px;
   padding: 0 15px;
   position: fixed;
   z-index: 1;
@@ -84,8 +84,8 @@ body {
   top: 0px;
 }
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 .main-nav-list {
   list-style: none;
@@ -235,13 +235,6 @@ footer {
     align-items: center;
     grid-template-columns: 1fr;
     padding-left: 0px;
-  }
-  .logo {
-    height: 75px;
-    width: 75px;
-  }
-  .header{
-    height: 75px;
   }
   .main-text-box {
     padding-left: 30px;
