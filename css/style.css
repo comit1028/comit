@@ -75,8 +75,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 75px;
-  padding: 0 15px;
+  height: 65px;
+  padding: 0 23px;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -84,14 +84,21 @@ body {
   top: 0px;
 }
 .logo {
+<<<<<<< HEAD
+  height: 90px;
+  width: 90px;
+=======
   height: 75px;
   width: 75px;
+<<<<<<< Updated upstream
+=======
+>>>>>>> d23d7877b7a25fb9d37dcf61d4de163bbfc96f94
+>>>>>>> Stashed changes
 }
 .main-nav-list {
   list-style: none;
   display: flex;
   gap: 35px;
-  margin-right: 15px;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -308,4 +315,3 @@ footer {
     font-size: 40px;
   }
 }
-
