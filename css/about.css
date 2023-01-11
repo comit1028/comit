@@ -134,32 +134,87 @@ section {
   height: 120px;
   margin-top: 10px;
 }
-
 .btn,
 .btn:link,
 .btn:visited {
-  width: 100px;
+  width: 95px;
   border: 1.8px solid black;
   height: 35px;
   font-size: 12px;
   margin-left: 80px;
   margin-top: 8px;
+  background-color: transparent;
 }
 .el-1 {
   padding-right: 5px;
 }
 
 .c-logo {
-  width: 105px;
+  width: 100px;
   margin-left: 0px;
 }
-.ms-logo {
-  width: 120px;
-  margin-left: -21px;
+.py-logo {
+  width: 110px;
+  margin-left: 0px;
 }
 .js-logo {
   margin-left: 0px;
-  width: 115px;
+  width: 110px;
+}
+.algorithm-logo {
+  margin-left: -10px;
+  width: 130px;
+}
+
+.modal-hidden {
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 350px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-family: korFont;
+  line-height: 1.2;
+}
+.class-title {
+  padding-bottom: 15px;
+}
+.class-subtitle {
+  background-color: #9900ff;
+  color: white;
+  display: inline-block;
+  border-radius: 7px;
+}
+.class-subtitle-text {
+  margin: 3.5px;
+}
+.modal-description {
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 25px;
+}
+.github-link {
+  text-decoration: none;
+  color: #767676;
+  font-weight: 1000;
+}
+.close-modal {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  font-size: 45px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 .ending-text {
   display: flex;
