@@ -209,8 +209,8 @@ section {
 }
 .close-modal {
   position: absolute;
-  top: 4px;
-  right: 20px;
+  top: 0px;
+  right: 13px;
   font-size: 45px;
   color: #333;
   cursor: pointer;
@@ -263,5 +263,17 @@ section {
   .ending-text {
     flex-direction: column;
     align-items: center;
+  }
+  .modal {
+    width: 350px;
+    height: 370px;
+  }
+  .modal-description {
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: 25px;
+  }
+  .class-subtitle-text {
+    font-size: 12px;
   }
 }
