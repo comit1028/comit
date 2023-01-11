@@ -300,7 +300,7 @@ footer {
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 40%;
   }
   .main-nav-link:link,
   .main-nav-link:visited {
