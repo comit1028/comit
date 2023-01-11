@@ -185,7 +185,7 @@ section {
   line-height: 1.2;
 }
 .class-title {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .class-subtitle {
   background-color: #9900ff;
@@ -194,6 +194,7 @@ section {
   border-radius: 7px;
 }
 .class-subtitle-text {
+  font-size: 13px;
   margin: 3.5px;
 }
 .modal-description {
