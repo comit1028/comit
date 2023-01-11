@@ -75,7 +75,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  height: 80px;
+  height: 73px;
   padding: 0 23px;
   position: fixed;
   z-index: 1;
@@ -84,7 +84,7 @@ body {
   top: 0px;
 }
 .logo {
-  height: 80px;
+  height: 55px;
   width: 80px;
 }
 .main-nav-list {
@@ -98,7 +98,7 @@ body {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
   transition: all 0.3s;
   font-family: engFont;
   transition: all 0.3s;
