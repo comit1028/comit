@@ -103,7 +103,7 @@ section {
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   margin-top: 20px;
 }
 .container {
@@ -111,7 +111,6 @@ section {
   height: 240px;
   padding: 10px;
   padding-top: 20px;
-  margin-left: 50px;
   box-shadow: 1px 1px 2.5px 1.5px rgba(168, 168, 168, 0.201);
   display: flex;
   flex-direction: column;
@@ -164,7 +163,9 @@ section {
   margin-left: -10px;
   width: 130px;
 }
-
+.web-logo {
+  width: 120px;
+}
 .modal-hidden {
   display: none;
 }
@@ -193,7 +194,7 @@ section {
   border-radius: 7px;
 }
 .class-subtitle-text {
-  font-size: 13px;
+  font-size: 14px;
   margin: 3.5px;
 }
 .modal-description {
@@ -283,6 +284,6 @@ section {
     margin-bottom: 25px;
   }
   .class-subtitle-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
