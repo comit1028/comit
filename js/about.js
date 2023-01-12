@@ -1,19 +1,64 @@
-"use strict";
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
-const btnShowModal = document.querySelectorAll(".btn");
-const btnCloseModal = document.querySelector(".close-modal");
+// Get the modal
+var modal = document.getElementsByClassName('modal');
 
-const openModal = function () {
-  modal.classList.remove("modal-hidden");
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("btn");
+
+// Get the <span> element that closes the modal
+var closeModal = document.getElementsByClassName("close-modal");
+
+const overlay = document.querySelector(".overlay");
+
+// When the user clicks the button, open the modal 
+btn[0].onclick = function() {
+  modal[0].style.display = "block";
   overlay.classList.remove("modal-hidden");
-};
-const closeModal = function () {
+}
+
+btn[1].onclick = function() {
+  modal[1].style.display = "block";
+  overlay.classList.remove("modal-hidden");
+}
+
+btn[2].onclick = function() {
+  modal[2].style.display = "block";
+  overlay.classList.remove("modal-hidden");
+  }
+  
+btn[3].onclick = function() {
+  modal[3].style.display = "block";
+  overlay.classList.remove("modal-hidden");
+}
+
+// When the user clicks on <closeModal> (x), close the modal
+closeModal[0].onclick = function() {
+  modal[0].style.display = "none";
+  overlay.classList.add("modal-hidden");
+}
+
+closeModal[1].onclick = function() {
+  modal[1].style.display = "none";
+  overlay.classList.add("modal-hidden");
+}
+
+closeModal[2].onclick = function() {
+  modal[2].style.display = "none";
+  overlay.classList.add("modal-hidden");
+}
+  
+closeModal[3].onclick = function() {
+  modal[3].style.display = "none";
+  overlay.classList.add("modal-hidden");
+}
+
+overlay.onclick=function(){
   modal.classList.add("modal-hidden");
   overlay.classList.add("modal-hidden");
-};
-for (let i = 0; i < btnShowModal.length; i++) {
-  btnShowModal[i].addEventListener("click", openModal);
 }
-btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+    
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
