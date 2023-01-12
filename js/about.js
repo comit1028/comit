@@ -52,7 +52,10 @@ closeModal[3].onclick = function() {
 }
 
 overlay.onclick=function(){
-  modal.classList.add("modal-hidden");
+  modal[0].style.display = "none";
+  modal[1].style.display = "none";
+  modal[2].style.display = "none";
+  modal[3].style.display = "none";
   overlay.classList.add("modal-hidden");
 }
     
