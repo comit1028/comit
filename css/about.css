@@ -103,8 +103,16 @@ section {
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  gap: 50px;
+  gap: 90px;
   margin-top: 20px;
+}
+.classes-second-layer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 50px;
 }
 .container {
   width: 200px;
@@ -115,7 +123,9 @@ section {
   display: flex;
   flex-direction: column;
 }
-
+.container-hidden {
+  opacity: 0%;
+}
 .language {
   font-size: 13px;
   font-family: korFont2;
@@ -267,12 +277,23 @@ section {
     align-items: center;
     gap: 50px;
   }
+  .classes-second-layer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .container-hidden {
+    height: 0px;
+  }
   .container {
     margin-left: 0;
   }
   .ending-text {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+    gap: 70px;
+    margin-bottom: 60px;
   }
   .modal {
     width: 350px;
