@@ -134,44 +134,49 @@ img {
   z-index: 10;
 }
 
-@media screen and (max-width: 420px) {
-
+@media screen and (max-width: 720px) {
   .gallery {
     top: 100px;
     left: 25px;
-    height: 500px;
+    height: 300px;
   }
   .clipped-border {
-    width: 105px;
-    height: 105px;
+    width: 110px;
+    height: 110px;
   }
 
+  section {
+    margin-left: -18px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 550px;
+  }
   .clipped-border:nth-child(2) {
     top: 82px;
-    left: 50px;
+    left: 49px;
   }
 
   .clipped-border:nth-child(3) {
-    left: 100px;
+    left: 99px;
   }
 
   .clipped-border:nth-child(4) {
     top: 82px;
-    left: 150px;
+    left: 148px;
   }
 
   .clipped-border:nth-child(5) {
     top: 0px;
-    left: 200px;
+    left: 198px;
   }
   .clipped-border:nth-child(6) {
     top: 82px;
-    left: 250px;
+    left: 247.2px;
   }
   .description {
     width: 310px;
     font-size: 12px;
-    margin-top: -100px;
+    margin-top: 80px;
     line-height: 1.2;
   }
 }
