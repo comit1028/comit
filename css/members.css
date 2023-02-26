@@ -42,7 +42,7 @@ body {
   margin-bottom: 50px;
   margin-left: 25px;
   line-height: 1.3;
-  width: 330px;
+  width: 600px;
 }
 img {
   width: var(--width);
@@ -116,6 +116,16 @@ img {
   left: 587px;
 }
 
+.clipped-border:nth-child(7) {
+  top: 392px;
+  left: 1px;
+}
+
+.clipped-border:nth-child(8) {
+  top: 392px;
+  left: 118px;
+}
+
 #clipped {
   -webkit-clip-path: polygon(
     50% 0%,
@@ -174,7 +184,7 @@ img {
     left: 247.2px;
   }
   .description {
-    width: 310px;
+    width: 600px;
     font-size: 12px;
     margin-top: 80px;
     line-height: 1.2;
