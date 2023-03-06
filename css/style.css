@@ -305,4 +305,17 @@ footer {
   .main-nav-link:visited {
     font-size: 40px;
   }
+
+  
+}
+
+.qr {
+  flex:1;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.qr-img {
+  width: 50%;
+  margin-bottom: 50px;
 }
