@@ -139,7 +139,7 @@ img {
   .gallery {
     top: 100px;
     left: 25px;
-    height: 300px;
+    height: 400px;
   }
   .clipped-border {
     width: 110px;
@@ -173,6 +173,10 @@ img {
   .clipped-border:nth-child(6) {
     top: 82px;
     left: 247.2px;
+  }
+  .clipped-border:nth-child(7) {
+    top: 164px;
+    left: 99px;
   }
   .description {
     width: 600px;
